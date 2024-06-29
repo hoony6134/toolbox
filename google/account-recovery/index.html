@@ -6,36 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/src/lang.js"></script>
+    <script src="https://kit.fontawesome.com/9202347d2a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/style.css">
     <title>Google Account Recovery Troubleshooting Guide | Cyan Tools</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
 </head>
 
 <body>
     <div id="app">
         <div class="bg-slate-200 w-screen h-screen p-8 md:p-16 lg:p-24 xl:p-28">
-            <div class="bg-white w-full h-full rounded-3xl p-8">
-                <div class="mb-8 flex">
-                    <img src="/src/PE_Logo_NoMargin.png" alt="Google Product Experts" class="h-6" />
-                    <!-- spacer -->
-                    <div class="flex-grow"></div>
-                    <div class="hidden md:block">
-                        <!-- <span class="text-sm text-slate-500" data-i18n="google_account_recovery">Google Account Recovery</span> -->
-                        <span class="text-sm text-slate-500" data-i18n="troubleshooting_guide">Troubleshooting
-                            Guide</span> <br />
+            <div class="bg-white w-full h-full rounded-3xl p-8 relative">
+                <header class="bg-white pb-2">
+                    <div class="mb-6 flex">
+                        <img src="/src/PE_Logo_NoMargin.png" alt="Google Product Experts" class="h-6" />
+                        <div class="flex-grow"></div>
+                        <div class="hidden md:block">
+                            <span class="text-sm text-slate-500" data-i18n="troubleshooting_guide">Troubleshooting
+                                Guide</span> <br />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold" data-i18n="google_account_recovery_guide">Google
+                            Account Recovery Guide</h1>
+                    </div>
+                </header>
+
+                <div class="overflow-y-auto" style="max-height: calc(100% - 120px);">
+                    <div class="pb-8">
+                        <div class="mb-8">
+                            <p class="text-slate text-md mt-4" data-i18n="google_account_recovery_guide_desc">This guide
+                                provides information on how to recover your Google account and how to resolve issues
+                                that may arise during the recovery process.</p>
+                            <p class="text-slate text-md mt-1 mb-8" data-i18n="google_account_recovery_guide_desc_2">If
+                                you are experiencing issues while you are trying to recover your Google Account, please
+                                follow the steps below to help recover your account.</p>
+                            <a href="/step1" class="text-white bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700"
+                                data-i18n="get_started">Get Started</a>
+                        </div>
+                        <div>
+                            <select onchange="changeLanguage(this.value)" class="text-slate-600 font-bold"
+                                title="Language">
+                                <option value="en">English</option>
+                                <option value="ko">한국어</option>
+                            </select>
+                            <hr class="my-2" />
+                            <div>
+                                <span class="text-slate-600 text-sm font-semibold"
+                                    data-i18n="disclaimer">Disclaimer:</span>
+                                <span class="text-slate-500 text-sm" data-i18n="disclaimer_details">This site is not
+                                    affiliated with Google. It is maintained by Google Product Experts, who are
+                                    volunteers and not Google employees. This is a community-run site that provides help
+                                    and support for Google products. We are not responsible for any issues that may
+                                    arise from using this site.</span>
+                                <br />
+                                <!-- CONTRIBUTORS: Please add your name and GitHub profile link here -->
+                                <h2 class="text-slate-700 font-semibold mt-2" data-i18n="contributors">Contributors</h2>
+                                <div class="flex flex-wrap py-2 gap-2">
+                                    <div class="bg-slate-300 rounded-xl p-1 px-2">
+                                        <p class="text-slate-600 text-sm font-semibold" data-i18n="creator">Creator</p>
+                                        <img src="https://avatars.githubusercontent.com/u/65375075"
+                                            class="h-6 w-6 rounded-full inline-block" alt="hoony6134" />
+                                        <a href="https://github.com/hoony6134"
+                                            class="font-semibold text-slate-600">hoony6134</a>
+                                    </div>
+                                    <div class="bg-slate-300 rounded-xl p-1 px-2">
+                                        <p class="text-slate-600 text-sm font-semibold" data-i18n="translate_ko">Korean
+                                            Translation</p>
+                                        <img src="https://avatars.githubusercontent.com/u/65375075"
+                                            class="h-6 w-6 rounded-full inline-block" alt="hoony6134" />
+                                        <a href="https://github.com/hoony6134"
+                                            class="font-semibold text-slate-600">hoony6134</a>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/hoony6134/toolbox"
+                                    class="text-blue-400 hover:text-blue-600 text-sm">
+                                    <span data-i18n="contribute_n_translate">
+                                    Contribute & Help us translate!
+                                    </span>
+                                    <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="mb-8">
-                    <h1 class="text-2xl md:text-3xl font-bold" data-i18n="google_account_recovery_guide">Google Account
-                        Recovery Guide</h1>
-                    <p class="text-slate text-md mt-4" data-i18n="google_account_recovery_guide_desc">This guide
-                        provides information on how to recover your Google account and how to resolve issues that may
-                        arise during the recovery process.</p>
-                </div>
-                <select onchange="changeLanguage(this.value)" class="text-slate-600 font-bold" title="Language">
-                    <option value="en">English</option>
-                    <option value="ko">한국어</option>
-                </select>
             </div>
         </div>
     </div>

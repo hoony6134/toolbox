@@ -1,5 +1,14 @@
 {
+    "get_started": "Get Started →",
     "troubleshooting_guide": "Troubleshooting Guide",
     "google_account_recovery_guide": "Google Account Recovery Guide",
-    "google_account_recovery_guide_desc": "This guide provides information on how to recover your Google account and how to resolve issues that may arise during the recovery process."
+    "google_account_recovery_guide_desc": "This guide provides information on how to recover your Google account and how to resolve issues that may arise during the recovery process.",
+    "contribute_n_translate": "Contribute & Help Us Translate!",
+    "creator": "Creator",
+    "translator": "Translator",
+    "translate_ko": "Translate to Korean",
+    "contributors": "Contributors",
+    "disclaimer": "Disclaimer",
+    "disclaimer_details": "This site is not affiliated with Google. It is maintained by Google Product Experts, who are volunteers and not Google employees. This is a community-run site that provides help and support for Google products. We are not responsible for any issues that may arise from using this site.",
+    "google_account_recovery_guide_desc_2": "If you are experiencing issues while you are trying to recover your Google Account, please click the \"Get Started\" button below to help recover your account."
 }
