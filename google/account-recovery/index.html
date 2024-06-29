@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/src/lang.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Google Account Recovery Troubleshooting Guide | Cyan Tools</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
+</head>
+
+<body>
+    <div id="app">
+        <div class="bg-slate-200 w-screen h-screen p-8 md:p-16 lg:p-24 xl:p-28">
+            <div class="bg-white w-full h-full rounded-3xl p-8">
+                <div class="mb-8 flex">
+                    <img src="/src/PE_Logo_NoMargin.png" alt="Google Product Experts" class="h-6" />
+                    <!-- spacer -->
+                    <div class="flex-grow"></div>
+                    <div class="hidden md:block">
+                        <!-- <span class="text-sm text-slate-500" data-i18n="google_account_recovery">Google Account Recovery</span> -->
+                        <span class="text-sm text-slate-500" data-i18n="troubleshooting_guide">Troubleshooting
+                            Guide</span> <br />
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h1 class="text-2xl md:text-3xl font-bold" data-i18n="google_account_recovery_guide">Google Account
+                        Recovery Guide</h1>
+                    <p class="text-slate text-md mt-4" data-i18n="google_account_recovery_guide_desc">This guide
+                        provides information on how to recover your Google account and how to resolve issues that may
+                        arise during the recovery process.</p>
+                </div>
+                <select onchange="changeLanguage(this.value)" class="text-slate-600 font-bold" title="Language">
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
