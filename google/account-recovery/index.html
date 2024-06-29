@@ -13,6 +13,14 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="bg-slate-200 w-screen h-screen flex justify-center items-center">
+            <div class="bg-slate-400 w-24 h-24 rounded-full flex justify-center items-center">
+                <!-- loader gif -->
+                <img src="/src/loader.gif" alt="Loading..." class="w-12" />
+            </div>
+        </div>
+    </div>
     <div id="app">
         <div class="bg-slate-200 w-screen h-screen p-8 md:p-16 lg:p-24 xl:p-28">
             <div class="bg-white w-full h-full rounded-3xl p-8 relative">
@@ -45,7 +53,7 @@
                         </div>
                         <div>
                             <select onchange="changeLanguage(this.value)" class="text-slate-600 font-bold"
-                                title="Language">
+                                title="Language" id="language">
                                 <option value="en">English</option>
                                 <option value="ko">한국어</option>
                             </select>

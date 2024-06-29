@@ -36,5 +36,12 @@ async function initializeLanguage() {
 
 // Initialize language on page load and hide content until done
 window.addEventListener('DOMContentLoaded', async () => {
+    // Hide content until language is initialized (div id: app)
+    // sync the dropdown with the browser language
+    document.getElementById('app').style.display = 'none';
+    document.getElementById('loader').style.display = 'block';
+    document.getElementById('language').value = localStorage.getItem("language") || navigator.language.split('-')[0] || 'en';
     await initializeLanguage();
+    document.getElementById('app').style.display = 'block';
+    document.getElementById('loader').style.display = 'none';
 });
