@@ -16,10 +16,14 @@ function updateContent(langData) {
         element.textContent = langData[key];
     });
 }
-
-// Function to change language
+// Function to change language and update URL parameter
 async function changeLanguage(lang) {
     await setLanguagePreference(lang);
+
+    // Update URL with the new language parameter
+    const url = new URL(window.location);
+    url.searchParams.set('hl', lang);
+    window.history.pushState({}, '', url);
 
     const langData = await fetchLanguageData(lang);
     updateContent(langData);
@@ -29,6 +33,13 @@ async function changeLanguage(lang) {
 async function initializeLanguage() {
     // set browser language as default language
     console.log("detected language: " + navigator.language);
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('hl');
+    if (langParam) {
+        await changeLanguage(langParam);
+        document.getElementById('language').value = langParam;
+        localStorage.setItem("language", langParam);
+    }
     const userPreferredLanguage = localStorage.getItem("language") || navigator.language.split('-')[0] || 'en';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
