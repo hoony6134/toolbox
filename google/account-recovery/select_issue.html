@@ -44,18 +44,49 @@
                 <div class="overflow-y-auto" style="max-height: calc(100% - 120px);">
                     <div class="pb-8">
                         <div class="mb-8">
-                            <p class="text-slate text-md mt-4" data-i18n="google_account_recovery_guide_desc">This guide
-                                provides information on how to recover your Google account and how to resolve issues
-                                that may arise during the recovery process.</p>
-                            <p class="text-slate text-md mt-1" data-i18n="google_account_recovery_guide_desc_2">If
-                                you are experiencing issues while you are trying to recover your Google Account, please
-                                follow the steps below to help recover your account.</p>
-                            <p class="text-slate text-md mt-2 mb-8 font-semibold" data-i18n="disclaimer_notice">Note that this
-                                guide is not affiliated with Google. It is maintained by Google Product Experts, who are
-                                volunteers and not Google employees. Please read the disclaimer at the bottom of the
-                                page.</p>
-                            <a href="select_issue.html" class="text-white bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700"
-                                data-i18n="get_started">Get Started</a>
+                            <div class="flex">
+                                <h2 class="text-slate-700 font-semibold text-xl" data-i18n="select_issue">Select the
+                                    issue you are experiencing</h2>
+                                <div class="flex-grow"></div>
+                                <a href="javascript:history.back()"
+                                    class="text-slate-500 hover:text-slate-600 hover:font-semibold">
+                                    <i class="fas fa-arrow-left mr-1"></i><span data-i18n="back">Back</span>
+                                </a>
+                            </div>
+                            <p class="text-slate text-md mt-4" data-i18n="google_account_recovery_step_1_desc">Please
+                                select the
+                                issue you are experiencing with your Google Account.</p>
+                            <div class="mt-4">
+                                <ul class="list-disc list-inside">
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_1">I forgot my
+                                        password.</li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_2">I forgot my
+                                        username or email address.</li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_7">I'm facing \"Couldn't verify
+                                        it's you\" error.</li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_3">I know my
+                                        username and password, but I can't sign in.</li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_4">I think someone
+                                        else is using my account, or my account is hacked.</li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_5">I can't reset my
+                                        password because I can't access the email address or phone number on my account.
+                                    </li>
+                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        data-i18n="google_account_recovery_step_1_option_6">I'm having trouble
+                                        with 2-Step Verification.</li>
+                                    <a href="/google/ask_community.html?no_issue">
+                                        <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                            data-i18n="none_of_the_above">None of the
+                                            above.</li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
                         <div>
                             <select onchange="changeLanguage(this.value)" class="text-slate-600 font-bold"
