@@ -7,9 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/src/lang.js"></script>
     <script src="https://kit.fontawesome.com/9202347d2a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/src/style.css">
     <title>Google Account Recovery Troubleshooting Guide | Cyan Tools</title>
 </head>
@@ -44,7 +42,7 @@
                 <div class="overflow-y-auto" style="max-height: calc(100% - 120px);">
                     <div class="pb-8">
                         <div class="mb-8">
-                            <div class="flex">
+                            <div class="flex mt-2">
                                 <h2 class="text-slate-700 font-semibold text-xl" data-i18n="select_issue">Select the
                                     issue you are experiencing</h2>
                                 <div class="flex-grow"></div>
@@ -58,28 +56,33 @@
                                 issue you are experiencing with your Google Account.</p>
                             <div class="mt-4">
                                 <ul class="list-disc list-inside">
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
-                                        data-i18n="google_account_recovery_step_1_option_1">I forgot my
-                                        password.</li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                    <a href="/google/account-recovery/forgot_password.html">
+                                        <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                            data-i18n="google_account_recovery_step_1_option_1">I forgot my
+                                            password.</li>
+                                    </a>
+                                    <!-- <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                         data-i18n="google_account_recovery_step_1_option_2">I forgot my
-                                        username or email address.</li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
-                                        data-i18n="google_account_recovery_step_1_option_7">I'm facing \"Couldn't verify
-                                        it's you\" error.</li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        username or email address.</li> -->
+                                    <a href="/google/account-recovery/couldnt_verify.html">
+                                        <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                            data-i18n="google_account_recovery_step_1_option_7">I'm facing \"Couldn't
+                                            verify
+                                            it's you\" error.</li>
+                                    </a>
+                                    <!-- <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                         data-i18n="google_account_recovery_step_1_option_3">I know my
-                                        username and password, but I can't sign in.</li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        username and password, but I can't sign in.</li> -->
+                                    <!-- <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                         data-i18n="google_account_recovery_step_1_option_4">I think someone
-                                        else is using my account, or my account is hacked.</li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                        else is using my account, or my account is hacked.</li> -->
+                                    <!-- <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                         data-i18n="google_account_recovery_step_1_option_5">I can't reset my
                                         password because I can't access the email address or phone number on my account.
-                                    </li>
-                                    <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
+                                    </li> -->
+                                    <!-- <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                         data-i18n="google_account_recovery_step_1_option_6">I'm having trouble
-                                        with 2-Step Verification.</li>
+                                        with 2-Step Verification.</li> -->
                                     <a href="/google/ask_community.html?no_issue">
                                         <li class="text-slate-500 hover:text-slate-600 hover:font-semibold"
                                             data-i18n="none_of_the_above">None of the
